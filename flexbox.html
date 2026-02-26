@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        #parent {
+            min-height: 420px;
+            border: 1px solid red;
+            background-color: orange;
+            display: flex;
+            flex-direction: column;
+            /* main axis alignment */
+            justify-content:end;
+            /* cross axis alignment*/
+            align-items: end; 
+            flex-wrap: wrap;
+            gap: 10px;
+            width: 400px;
+        }
+
+        .child {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="parent">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+    </div>
+</body>
+
+</html>
